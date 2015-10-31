@@ -3,7 +3,7 @@
 //  Deferred
 //
 //  Created by Justin Driscoll on 10/31/15.
-//  Copyright © 2015 Retrobit, LLC. All rights reserved.
+//  Copyright © 2015 Retrobit, LLC. MIT License.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double DeferredVersionNumber;
 FOUNDATION_EXPORT const unsigned char DeferredVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Deferred/PublicHeader.h>
-
-

@@ -10,6 +10,7 @@
 		D047D7CD1BE537D7001F2B15 /* Deferred.h in Headers */ = {isa = PBXBuildFile; fileRef = D047D7CC1BE537D7001F2B15 /* Deferred.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D047D7D41BE537D7001F2B15 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D047D7C91BE537D7001F2B15 /* Deferred.framework */; };
 		D047D7D91BE537D7001F2B15 /* DeferredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047D7D81BE537D7001F2B15 /* DeferredTests.swift */; };
+		D047D7E41BE53801001F2B15 /* Deferred.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047D7E31BE53801001F2B15 /* Deferred.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D047D7D31BE537D7001F2B15 /* DeferredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeferredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D047D7D81BE537D7001F2B15 /* DeferredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredTests.swift; sourceTree = "<group>"; };
 		D047D7DA1BE537D7001F2B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D047D7E31BE53801001F2B15 /* Deferred.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deferred.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D047D7CC1BE537D7001F2B15 /* Deferred.h */,
+				D047D7E31BE53801001F2B15 /* Deferred.swift */,
 				D047D7CE1BE537D7001F2B15 /* Info.plist */,
 			);
 			path = Deferred;
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D047D7E41BE53801001F2B15 /* Deferred.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -295,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,6 +312,7 @@
 		D047D7DE1BE537D7001F2B15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.retrobitops.Deferred;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D047D7DF1BE537D7001F2B15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +383,7 @@
 				D047D7DF1BE537D7001F2B15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D047D7E01BE537D7001F2B15 /* Build configuration list for PBXNativeTarget "DeferredTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +392,7 @@
 				D047D7E21BE537D7001F2B15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

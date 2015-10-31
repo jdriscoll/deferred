@@ -1,5 +1,7 @@
 # Deferred
 
+[![Build Status](https://travis-ci.org/jdriscoll/deferred.svg?branch=master)](https://travis-ci.org/jdriscoll/deferred)
+
 ## Description
 
 Thread safe Deferred class for Swift 2. Based on [https://github.com/bignerdranch/Deferred](https://github.com/bignerdranch/Deferred).
